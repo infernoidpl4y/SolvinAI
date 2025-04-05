@@ -25,7 +25,10 @@ Aplicación de escritorio con inteligencia artificial integrada que combina reco
 
 1.Descargar programa:
 https://drive.google.com/file/d/19vHfsJwUEtwa2q6ENSuwzrZKu_QI5DFh/view?usp=drive_link
+
 2.Descargar el archivo api.key:
 https://github.com/infernoidpl4y/SolvinAI/blob/main/releases/api.key
+
 3.Mover api.key a la misma carpeta que SolvinAI.exe.
+
 4.Abrir SolvinAI.exe
