@@ -7,7 +7,7 @@ import threading
 
 # Configuración inicial
 r = sr.Recognizer()
-cliente = OpenAI(api_key="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", 
+cliente = OpenAI(api_key="API_KEY de OpenRouter", 
                 base_url="https://openrouter.ai/api/v1")
 engine = pyttsx3.init()
 
