@@ -25,5 +25,5 @@ Aplicación de escritorio con inteligencia artificial integrada que combina reco
 
 1. Clona el repositorio:
 ```bash
-git clone https://github.com/tu_usuario/solvin-ai.git
-cd solvin-ai
+git clone https://github.com/infernoidpl4y/solvinai.git
+cd solvinai
