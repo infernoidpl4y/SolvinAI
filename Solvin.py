@@ -5,9 +5,11 @@ import tkinter as tk
 from tkinter import ttk, scrolledtext, messagebox
 import threading
 
-# Configuración inicial
 r = sr.Recognizer()
-cliente = OpenAI(api_key="API_KEY de OpenRouter", 
+with open("api.key", 'r') as file:
+    api_key=file.read()
+    file.close()
+cliente = OpenAI(api_key=api_key, 
                 base_url="https://openrouter.ai/api/v1")
 engine = pyttsx3.init()
 
@@ -52,7 +54,7 @@ class InterfazApp:
         
         self.mostrar_mensaje("AI: Hola, ¿en qué puedo ayudarte?", "ai")
         self.iniciar_habla("Hola, ¿en qué puedo ayudarte?")
-        
+    
     def crear_menu(self):
         menubar = tk.Menu(self.ventana)
 
@@ -177,6 +179,8 @@ class InterfazApp:
         - SpeechRecognition
         - Pyttsx3
         - Tkinter
+        
+        Nota: Si ocurre un error, descargar nuevamente el archivo api.key
         """
         
         ttk.Label(frame, text=info_texto, justify=tk.LEFT, font=('Consolas', 10)).pack(pady=10)
